@@ -27,7 +27,7 @@
     pointer-events: none !important;
 
     /* REPLACE WITH YOUR GITHUB RAW URL */
-    background-image: url(https://github.com/omaris401/Tight-Puppy-Gaming/blob/main/a%20a.png) !important;
+    background-image: url(https://github.com/omaris401/Tight-Puppy-Gaming-theme/blob/main/a%20a.png) !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -151,3 +151,4 @@ body::after {
     color: rgb(var(--pink-main)) !important;
     text-shadow: 0 0 10px rgba(var(--pink-main), 0.8) !important;
 }
+
