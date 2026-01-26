@@ -1,170 +1,118 @@
 /**
- * @name Tight Puppy Gaming
- * @author omaris
+ * @name Tight puppy gaming
+ * @author VaporousCreeper (original) + Omaris (edit)
  * @version 1.4
- * @description Belle 💖
+ * @description Belle 💕 
+ * @source https://github.com/VaporousCreeper/BetterDiscord-ThemesAndPlugins
  */
 
-/* ============================= */
-/* 🌸 THEME VARIABLES */
-:root {
-    /* 🐶 Background: GitHub raw (geo-safe) */
-    --background: url('https://raw.githubusercontent.com/omaris401/Tight-Puppy-Gaming-theme/main/puppy.png');
+@import url('https://raw.githack.com/VaporousCreeper/BetterDiscord-ThemesAndPlugins/master/Themes/GGO_Kirito/core.css');
 
-    /* ✏️ Text */
+:root{
+    /* 🌸 Background - replace with your raw GitHub image URL */
+    --background: url('https://raw.githack.com/omaris401/Tight-Puppy-Gaming-theme/main/puppy.png');
+
+    /* ✏️ Text – darker & readable */
     --activetext-colour: #2b0f1a;
 
-    /* 💗 Primary Pink */
+    /* 💗 Main Pink Theme */
     --primary1-colour: #F9A6C4;
     --primary2-colour: rgba(249,166,196,0.6);
     --primary3-colour: rgba(249,166,196,0.4);
     --primary4-colour: rgba(249,166,196,0.25);
 
-    /* 🎀 Secondary Panels */
+    /* 🎀 Soft Pastel Panels */
     --secondary1-colour: rgba(255,230,240,0.55);
     --secondary2-colour: rgba(255,210,225,0.65);
     --secondary3-colour: rgba(40,15,25,0.45);
     --secondary4-colour: rgba(40,15,25,0.30);
 }
 
-/* ============================= */
-/* 🐶 WALLPAPER + GRADIENT FALLBACK */
-html::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    pointer-events: none;
+/* ============================== */
+/* 🖤 FORCE BETTER TEXT CONTRAST */
+/* ============================== */
 
-    /* Image first, fallback gradient second */
-    background-image: var(--background), linear-gradient(135deg, #F9A6C4 0%, #FFD2E1 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    filter: brightness(0.9) blur(2px);
-}
-
-/* Sparkles overlay */
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-
-    background: radial-gradient(circle at 30% 30%, rgba(255,200,220,0.15), transparent 70%);
-    mix-blend-mode: lighten;
-}
-
-/* ============================= */
-/* 💗 PANELS */
-#app-mount,
-#app-mount .layer__960e4,
-#app-mount .app__160d8,
-#app-mount .chatContent_f75fb0,
-#app-mount .containerDefault_c69b6d,
-#app-mount .channelChatWrapper_cb9592,
-#app-mount .messagesWrapper__36d07,
-#app-mount .peopleColumn__133bf,
-#app-mount .sidebar_c48ade,
-#app-mount .sidebarList_c48ade,
-#app-mount .homeWrapperNormal__0920e {
-    background-color: rgba(var(--pink-main), 0.15) !important;
-    backdrop-filter: blur(6px) !important;
-    border-radius: 16px !important;
-    margin: 6px !important;
-    position: relative;
-    z-index: 0;
-}
-
-/* ============================= */
-/* 🖤 TEXT COLORS */
 .theme-dark {
-    --text-normal: rgb(var(--text-main));
-    --text-muted: rgb(var(--pink-dark));
-    --interactive-normal: rgb(var(--pink-main));
-    --interactive-hover: rgb(var(--pink-light));
-    --interactive-active: rgb(var(--pink-main));
+    --text-normal: #2b0f1a;
+    --text-muted: #5a2a3a;
+    --text-link: #c2185b;
+    --interactive-normal: #3b1a26;
+    --interactive-hover: #000000;
+
+    --background-modifier-hover: rgba(249,166,196,0.30);
+    --background-modifier-active: rgba(249,166,196,0.45);
+    --background-modifier-selected: rgba(249,166,196,0.60);
 }
 
-/* ============================= */
-/* 🌸 LINKS */
-#app-mount a {
-    color: var(--pink-main);
-    text-decoration: underline;
-    transition: 0.3s ease;
-}
-#app-mount a:hover {
-    color: var(--pink-light);
-    text-shadow: 0 0 6px rgba(var(--pink-main), 0.8);
+/* Channel names, messages, user list */
+.containerDefault-YUSmu3,
+.name-28HaxV,
+.username-h_Y3Us,
+.messageContent-2t3eCI {
+    color: #2b0f1a !important;
 }
 
-/* ============================= */
-/* 🎀 BUTTONS */
-.button-1yVL_7,
-.lookFilled-1Gx00P {
-    background: rgba(var(--pink-main), 0.3) !important;
-    border-radius: 12px !important;
-    border: 1px solid rgba(var(--pink-main), 0.4) !important;
-    transition: 0.3s ease !important;
-}
-.button-1yVL_7:hover {
-    background: rgba(var(--pink-main), 0.5) !important;
-    box-shadow: 0 0 12px rgba(var(--pink-main), 0.6) !important;
+/* ========================= */
+/* 💗 HEART HOVER EFFECTS 💗 */
+/* ========================= */
+
+button,
+.containerDefault-YUSmu3,
+.wrapper-1_HaEi,
+.item-2LIpTv {
+    position: relative;
 }
 
-/* ============================= */
-/* 💬 MENTIONS */
-.mentioned-Tre-dv,
-#app-mount .mention,
-#app-mount .mentioned__5126c {
-    background: linear-gradient(90deg, rgba(var(--pink-main),0.25), rgba(var(--pink-light),0.2)) !important;
-    border-left: 4px solid rgb(var(--pink-main)) !important;
-    border-radius: 10px !important;
-    color: rgb(var(--pink-main)) !important;
+button:hover,
+.containerDefault-YUSmu3:hover,
+.wrapper-1_HaEi:hover,
+.item-2LIpTv:hover {
+    box-shadow: 0 0 12px rgba(249,166,196,0.6);
+    transition: all 0.25s ease;
 }
 
-/* ============================= */
-/* 🐾 CHANNEL HOVER */
-.wrapper-NhbLHG:hover {
-    background: rgba(var(--pink-main),0.15) !important;
-    border-radius: 10px !important;
+button:hover::after,
+.containerDefault-YUSmu3:hover::after,
+.wrapper-1_HaEi:hover::after,
+.item-2LIpTv:hover::after {
+    content: "💗";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    animation: heart-pop 0.6s ease forwards;
+    pointer-events: none;
 }
 
-/* ============================= */
-/* 🌈 SCROLLBAR */
-#app-mount ::-webkit-scrollbar {
-    width: 8px;
-}
-#app-mount ::-webkit-scrollbar-thumb {
-    background: rgba(var(--pink-main),0.7);
-    border-radius: 10px;
-}
-
-/* ============================= */
-/* ✨ GLOW EFFECTS */
-.avatar-2e8lTP,
-.icon-2xnN2Y {
-    filter: drop-shadow(0 0 6px rgba(var(--pink-main),0.6)) !important;
+@keyframes heart-pop {
+    0% {
+        transform: translateY(-50%) scale(0.6);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-60%) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80%) scale(1);
+        opacity: 0;
+    }
 }
 
-/* ============================= */
-/* ⏰ TIMESTAMPS */
-.message-2qnXI6 .timestamp-1AjY5d {
-    color: #F9A6C4 !important;
-    font-weight: bold !important;
-    text-shadow: 0 0 4px rgba(var(--pink-main),0.5) !important;
+/* 💕 Message hover clarity */
+.message-2CShn3:hover {
+    background-color: rgba(255,210,225,0.35);
+    box-shadow: inset 0 0 10px rgba(249,166,196,0.4);
+    border-radius: 12px;
 }
 
 /* ============================= */
 /* 🐶 WATERMARK */
 .wordmark-2u86JB::after {
-    content: " ♡ Tight Puppy Gaming — by omaris ";
-    font-size: 12px;
-    margin-left: 8px;
-    color: #F9A6C4;
-    font-weight: 600;
-    text-shadow: 0 0 6px rgba(249,166,196,0.8);
-    opacity: 0.9;
+    content: " Tight Puppy Gaming ♡ made by omaris " !important;
+    font-size: 12px !important;
+    margin-left: 8px !important;
+    color: rgb(var(--red-accent)) !important;
+    text-shadow: 0 0 10px rgba(var(--red-accent), 0.8) !important;
 }
