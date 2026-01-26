@@ -1,16 +1,16 @@
 /**
- * @name Tight puppy gaming
+ * @name tight puppy gaming
  * @author VaporousCreeper (original) + Omaris (edit)
- * @version 1.4
- * @description Belle 💕 
+ * @version 1.5
+ * @description Belle 💕,
  * @source https://github.com/VaporousCreeper/BetterDiscord-ThemesAndPlugins
  */
 
 @import url('https://raw.githack.com/VaporousCreeper/BetterDiscord-ThemesAndPlugins/master/Themes/GGO_Kirito/core.css');
 
 :root{
-    /* 🌸 Background - replace with your raw GitHub image URL */
-    --background: url('https://raw.githack.com/omaris401/Tight-Puppy-Gaming-theme/main/puppy.png');
+    /* 🌸 Background - replace with your rawcdn.githack.com URL */
+    --background: url('https://rawcdn.githack.com/omaris401/Tight-Puppy-Gaming-theme/369b8a15618475377ef1acbff44a3d1d58c8f5a4/puppy.png');
 
     /* ✏️ Text – darker & readable */
     --activetext-colour: #2b0f1a;
